@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 76px;
+}
+
+input{
+  outline: none;
+}
+
+@layer components {
+  .citybackground {
+    background-position: 50%;
+    background-image: url("../public/backgrounds/bubble-reflecting-city.jpg");
+    height: 350px;
+  }
+  .blurbackground {
+    background-position: 50%;
+    background-image: url("../public/backgrounds/blur-background.jpg");
+    height: 350px;
+  }
+
+  .dropdown-menu-open {
+    height: 126px;
+  }
+
+  .transition-h {
+    transition: height 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .canvas {
+    backdrop-filter: 1000px;
+    overflow: hidden;
+    background: linear-gradient(
+      -90deg,
+      #040042 0%,
+      #000c49 10%,
+      #001761 25%,
+      #010057 45%,
+      #000152 55%,
+      #00194e 75%,
+      #071c49 85%,
+      #152158 100%
+    );
+  }
+
+  .canvas::before,
+  .canvas::after,
+  .canvas > .circles,
+  .canvas > .circles::before,
+  .canvas > .circles::after {
+    filter: blur(1000px);
+  }
+
+  .canvas::before,
+  .canvas::after {
+    content: "";
+    border-radius: 100%;
+  }
+
+  .canvas::before {
+    background: #ffecf5;
+    top: -195px;
+    left: -195px;
+  }
+
+  .canvas::after {
+    background: #86e1ef;
+    right: -195px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .canvas > .circles,
+  .canvas > .circles::before,
+  .canvas > .circles::after {
+    border-radius: 100%;
+    position: absolute;
+  }
+
+  .canvas > .circles::before,
+  .canvas > .circles::after {
+    content: "";
+    width: 140px;
+    height: 140px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .canvas > .circles {
+    width: 230px;
+    height: 230px;
+    background: #ffc285;
+    bottom: -60px;
+    left: 75px;
+  }
+
+  .canvas > .circles::before {
+    background: #8600ff;
+    left: -40%;
+  }
+
+  .canvas > .circles::after {
+    background: #ff0000;
+    right: -20%;
+  }
+
+  .text-shadow{
+    text-shadow: 1.7px 3px rgba(0, 0, 0, 0.76);
+  }
+
+  @media (min-width: 865px) {
+    .ancho-div-media{
+      width: 100px
+    }
+  }
+
+  @media (max-width: 809px) {
+    .xd {
+      margin-bottom: 30px;
+    }
+    .xd2 {
+      margin-top: -30px;
+    }
+    .xd3 {
+      height: 500px;
+    }
+
+    
+  }
+}
