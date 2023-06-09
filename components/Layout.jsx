@@ -16,18 +16,18 @@ export default function Layout({ children }) {
   return (
     <div className="font-italiana">
       <Navbar />
-      <Header  />
+      <Header />
       <section id="products">
-      <div  className="relative p-5 -mt-[76px] w-[100%] overflow-hidden canvas">
-        {success && (
-          <div className="mb-5 bg-cyan-600 text-white text-lg p-5 rounded-xl ">
-            Thanks for your order!
-          </div>
-        )}
-        {children}
-      </div>
+        <div className="relative p-5 -mt-[76px] w-[100%] overflow-hidden canvas">
+          {success && (
+            <div className="mb-5 bg-cyan-600 text-white text-lg p-5 rounded-xl ">
+              Thanks for your order!
+            </div>
+          )}
+          {children}
+        </div>
 
-      <div className="w-full h-[54px] canvas"></div>
+        <div className="w-full h-[54px] canvas"></div>
       </section>
       <div>
         <Footer />

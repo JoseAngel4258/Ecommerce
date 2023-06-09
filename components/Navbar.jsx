@@ -34,9 +34,9 @@ function Navbar() {
                 />
               </svg>
               <Link href={"/"}>
-              <div className="ml-[7px] text-lg hover:text-cyan-300 transition-all">
-                E-commerce
-              </div>
+                <div className="ml-[7px] text-lg hover:text-cyan-300 transition-all">
+                  E-commerce
+                </div>
               </Link>
             </span>
           </a>
@@ -76,7 +76,11 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a className="hover:text-cyan-400 transition-all" href="https://joseangel4258.github.io/Portfolio/">
+              <a
+                className="hover:text-cyan-400 transition-all"
+                Target="_blank"
+                href="https://joseangel4258.github.io/Portfolio/"
+              >
                 Contact Us
               </a>
             </li>
@@ -217,7 +221,11 @@ function Navbar() {
               </a>
             </li>
             <li className="mb-1">
-              <a className="hover:text-cyan-300 transition-all" target="_blank" href="https://joseangel4258.github.io/Portfolio/">
+              <a
+                className="hover:text-cyan-300 transition-all"
+                Target="_blank"
+                href="https://joseangel4258.github.io/Portfolio/"
+              >
                 Contact Us
               </a>
             </li>

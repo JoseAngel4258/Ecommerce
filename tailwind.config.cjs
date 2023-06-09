@@ -11,10 +11,8 @@ module.exports = {
         lato: ["Lato", "serif"],
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "city-background": "https://tecdn.b-cdn.net/img/new/slides/146.webp",
+        "hero-pattern":
+          "url('/ecommerce/public/backgrounds/technology-background-concept-circuit-board-electronic-system-futuristic-hi-tech-light-on-dark-blue-free-vector.jpg')",
       },
     },
   },

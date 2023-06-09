@@ -2,14 +2,18 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="citybackground bg-cover backgroundoptions h-screen relative mdd:-top-[63px] -top-[76px]">
+    <div className="bg-[url(https://static.vecteezy.com/system/resources/previews/006/430/145/original/technology-background-concept-circuit-board-electronic-system-futuristic-hi-tech-light-on-dark-blue-free-vector.jpg)] bg-cover backgroundoptions h-screen relative mdd:-top-[63px] -top-[76px]">
       <div className="relative overflow-hidden bg-no-repeat city-background h-screen">
         <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed">
           <div className="flex h-full items-center justify-center">
             <div className="px-6 text-center text-white md:px-12">
               <img src="/public/products/airpods.png" alt="" />
-              <h1 className="mb-6 text-5xl font-bold text-shadow">E-commerce</h1>
-              <h3 className="mb-8 text-3xl font-bold text-shadow">Phones, laptops and audio devices!</h3>
+              <h1 className="mb-6 text-5xl font-bold text-shadow">
+                E-commerce
+              </h1>
+              <h3 className="mb-8 text-3xl font-bold text-shadow">
+                Phones, laptops and audio devices!
+              </h3>
               <a
                 href="#products"
                 type="button"
@@ -24,7 +28,6 @@ const Header = () => {
         </div>
       </div>
     </div>
-    
   );
 };
 
